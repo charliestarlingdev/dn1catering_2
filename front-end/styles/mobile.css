@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
+
 .montserrat-nav {
   font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
@@ -15,13 +16,12 @@
     justify-content: space-between;
     width: 50%;
     height: 60px;
-    color: #000000;
+    color: #2b2b28;
     z-index: 1000;
     width:20rem;
 }
 
-#navbar a{
-}
+
 
 
 body {
@@ -31,10 +31,29 @@ body {
     justify-content: flex-start;
     margin: 0;
     padding: 0;
-    background-color: #f0f0f0;
     font-family: 'Montserrat', sans-serif;
-    height: 20rem;
     width: 100%;
     flex-wrap: nowrap;
     align-content: stretch;
+    color: #2b2b28;
+}
+
+.bg-b, .bg-p, .bg-w, .bg-g{
+  height: 25rem;
+  width:100%;
+}
+
+.bg-w{
+  background-color: #F8F8F8;
+}
+
+.bg-p{
+  background-color: #F1D6AB;
+}
+.bg-g{
+  background-color: #E3B04B;
+}
+
+.bg-b{
+  background-color: #2b2b28;
 }
