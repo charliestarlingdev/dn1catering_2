@@ -56,6 +56,23 @@ button {
 
 }
 
+.about-us-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
+  height: 50px;
+  margin-left: 20px;
+  margin-right: 20px;
+  color: #171717;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  margin-top: 20px;
+}
+
+
+
+
 .highlight {
   color: #E3B04B;
 }
@@ -129,6 +146,10 @@ body {
 
 .bg-w{
   background-color: #F8F8F8;
+}
+
+.about-us{
+  height:40rem;
 }
 
 .bg-p{
