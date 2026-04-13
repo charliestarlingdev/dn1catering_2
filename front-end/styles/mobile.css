@@ -21,6 +21,13 @@
     width:20rem;
 }
 
+#hb-nav{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 .spread-across {
     display:flex;
   flex-direction: row;
@@ -70,7 +77,12 @@ button {
   margin-top: 20px;
 }
 
-
+#hb-line-1, #hb-line-2, #hb-line-3 {
+    width: 30px;
+    height: 4px;
+    background-color: #E3B04B;
+    margin: 5px 0;
+}
 
 
 .highlight {
