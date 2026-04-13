@@ -86,23 +86,28 @@
 }
 
 .service-card {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
   height: 300px;
   min-width: 200px;
   width: 200px;
   background-color: #F8F8F8;
   border: 2px solid #E3B04B;
   margin: 9px;
-  border-radius: 15px;
+  border-radius: 10px;
+  color:#2b2b28
 }
 
 #services-header {
   margin-top: -35px;
   background-color: #171717;
   padding: 10px 20px;
-  border-radius: 15px;
+  border-radius: 10px;
   border: solid 2px #E3B04B;
 }
 
+/* Enquiry */
 .enquire-section{
   display: flex;
   flex-direction: column;
@@ -135,7 +140,7 @@ button {
   margin-top: -45px;
   background-color: #F8F8F8;
   padding: 10px 20px;
-  border-radius: 15px;
+  border-radius: 10px;
   border: solid 2px #E3B04B;
 }
 
