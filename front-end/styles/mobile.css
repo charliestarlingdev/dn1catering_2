@@ -105,6 +105,7 @@
   padding: 10px 20px;
   border-radius: 10px;
   border: solid 2px #E3B04B;
+  font-size: 20px;
 }
 
 /* Enquiry */
@@ -137,11 +138,12 @@ button {
 }
 
 #about-us-header {
-  margin-top: -45px;
+  margin-top: -25px;
   background-color: #F8F8F8;
   padding: 10px 20px;
   border-radius: 10px;
   border: solid 2px #E3B04B;
+  font-size:20px;
 }
 
 .about-us-content, bg-p, .bg-w, .bg-g{
