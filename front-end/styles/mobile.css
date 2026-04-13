@@ -53,6 +53,56 @@
   justify-content: space-between;
 }
 
+
+/* Services */
+
+#services {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px;
+  margin-top: 60px;
+  background-color: #171717;
+  color:#E3B04B;
+}
+
+.services-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+  max-width: 770px;
+}
+
+
+
+#card-set {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.service-card {
+  height: 300px;
+  min-width: 200px;
+  width: 200px;
+  background-color: #F8F8F8;
+  border: 2px solid #E3B04B;
+  margin: 9px;
+  border-radius: 15px;
+}
+
+#services-header {
+  margin-top: -35px;
+  background-color: #171717;
+  padding: 10px 20px;
+  border-radius: 15px;
+  border: solid 2px #E3B04B;
+}
+
 .enquire-section{
   display: flex;
   flex-direction: column;
@@ -86,7 +136,7 @@ button {
   background-color: #F8F8F8;
   padding: 10px 20px;
   border-radius: 15px;
-  border: solid 3px #E3B04B;
+  border: solid 2px #E3B04B;
 }
 
 .about-us-content, bg-p, .bg-w, .bg-g{
@@ -186,7 +236,7 @@ body {
     color: #2b2b28;
 }
 
-.bg-b, .bg-p, .bg-w, .bg-g{
+.bg-b, .bg-w, .bg-g{
   height: 25rem;
   width:100%;
 }
