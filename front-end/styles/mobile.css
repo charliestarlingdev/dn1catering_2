@@ -56,7 +56,7 @@ button {
 
 }
 
-.about-us-content {
+.about-us-content, bg-p, .bg-w, .bg-g{
   display: flex;
   flex-direction: column;
   align-items: center;
