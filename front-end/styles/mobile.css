@@ -230,8 +230,25 @@ body {
     background: white;
     border: 2px solid var(--gold);
     border-radius: var(--radius);
-    padding: 30px 20px;
+
+    padding: 25px 20px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
     transition: var(--transition);
+}
+
+.service-card h3 {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.service-card p {
+    font-size: 14px;
+    line-height: 1.5;
 }
 
 .service-card i {
@@ -241,8 +258,28 @@ body {
 }
 
 .service-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    transform: translateY(-6px);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+}
+
+/* =========================
+   Service Card Images
+========================= */
+.service-img {
+    width: 80%;
+    height: 160px;              /* 👈 nice balanced height */
+    object-fit: cover;
+    object-position: center;
+
+    border-radius: 10px;
+    margin: 10px 0 15px;
+
+    transition: transform 0.3s ease;
+}
+
+/* Slight zoom on hover (very premium feel) */
+.service-card:hover .service-img {
+    transform: scale(1.03);
 }
 
 /* =========================
@@ -364,7 +401,7 @@ body {
 .map-container iframe {
     width: 100%;
     height: 350px;
-    border: 0;
+    border: solid 2px #d19c35;
     border-radius: var(--radius);
     margin-top: 20px;
 }
