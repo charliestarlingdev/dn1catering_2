@@ -3,93 +3,246 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DN1 Catering | Private Catering at its Finest</title>
     <link rel="stylesheet" href="front-end/styles/mobile.css">
-    <title>Home</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
+
+    <!-- Contact Bar -->
     <div id="contact-top">
-        <p>info@dn1catering.com</p>
-        <p>+44 7564-602890</p>
+        <p><i class="fas fa-envelope"></i> info@dn1catering.com</p>
+        <p><i class="fas fa-phone"></i> +44 7564 602890</p>
     </div>
 
-    <div class="bg-b">
-        <div class="spread-across">
-            <div id="spacer"></div>
-            <div id="logo-box">
-                <img src="front-end/sources/dn1_logo_cropped.png" alt="Logo">
-            </div>
+    <!-- Sticky Navigation -->
+    <nav id="navbar">
+        <ul>
+            <li><a href="#about-us">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#reviews">Reviews</a></li>
+            <li><a href="#based">Location</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
 
-            <div id="hb-nav">
-                <div id="hb-line-1"></div>
-                <div id="hb-line-2"></div>
-                <div id="hb-line-3"></div>
-            </div>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="logo-wrapper">
+            <img src="front-end/sources/dn1_logo_cropped.png" alt="DN1 Catering Logo" id="logo">
         </div>
-        <div class="enquire-section">
-            <p><i>Private catering at it's <span class="highlight">finest</span></i>.</p>
-            <button id="enquire-btn">Enquire Now</button>
+        <div class="hero-content">
+            <h1>Private Catering at its <span class="highlight">Finest</span></h1>
+            <p>Creating unforgettable dining experiences for weddings, corporate events, and private celebrations.</p>
+            <a href="#contact" class="btn-primary">Enquire Now</a>
         </div>
-        <div class="hr-break"></div>
+    </section>
 
-
-    </div>
-
-    <div class="bg-w" id="about-us">
-        <img src="front-end/sources/pops_dn1.jpg" id="about-us-img" alt="About Us">
-        <div class="about-us-content">
-            <h1 id="about-us-header">About Us</h1>
-            <p>DN1 Catering is a family-run business that has been providing high-quality catering services for over 20 years. We pride ourselves on our commitment to excellence and our ability to create unforgettable dining experiences for our clients.</p>
-            <img src="front-end/sources/pink_tbls_dn1.jpg" id="wheatley-pink-img"alt="Wheatley Hall">
-            <p>Based at the Wheatley Golf Club for over {x} years, where we have provided {x,y,z}...</p>
+    <!-- About Us -->
+    <section class="section bg-light" id="about-us">
+        <div class="container">
+            <h2 class="section-title">About Us</h2>
+            <img src="front-end/sources/pops_dn1.jpg" alt="DN1 Catering Team" class="about-image">
+            <p>
+                DN1 Catering is a family-run business with over 20 years of experience delivering exceptional catering services.
+                Based at the prestigious Wheatley Golf Club, we specialise in weddings, corporate events, and private celebrations.
+                Our passion for food and dedication to excellence ensure every event is unforgettable.
+            </p>
         </div>
-    </div>
-    <div class="bg-p" id="services">
-        <div class="services-content">
-            <h1 id="services-header">Our Services</h1>
-            <div id="card-set">
-                <div class="service-card" id="food">
+    </section>
+
+    <!-- Services -->
+    <section class="section bg-cream" id="services">
+        <div class="container">
+            <h2 class="section-title">Our Services</h2>
+            <div class="card-grid">
+                <div class="service-card">
+                    <i class="fas fa-utensils"></i>
                     <h3>Food & Drink</h3>
+                    <p>Delicious dishes crafted with the finest ingredients, from canapés to full-course meals.</p>
                 </div>
-                <div class="service-card" id="menus">
+                <div class="service-card">
+                    <i class="fas fa-list"></i>
                     <h3>Custom Menus</h3>
+                    <p>Bespoke menus tailored to your tastes, dietary needs, and event theme.</p>
                 </div>
-                <div class="service-card" id="music">
+                <div class="service-card">
+                    <i class="fas fa-music"></i>
                     <h3>Live Music</h3>
+                    <p>Enhance your event with talented musicians to create the perfect atmosphere.</p>
                 </div>
-                <div class="service-card" id="entertainment">
+                <div class="service-card">
+                    <i class="fas fa-glass-cheers"></i>
                     <h3>Entertainment</h3>
+                    <p>From DJs to magicians, we provide entertainment options to delight your guests.</p>
                 </div>
-                
-                <div class="service-card" id="other">
-                    <h3>Something Else...</h3>
+                <div class="service-card">
+                    <i class="fas fa-star"></i>
+                    <h3>Complete Event Planning</h3>
+                    <p>We manage every detail to ensure a seamless and stress-free event.</p>
                 </div>
             </div>
         </div>
+    </section>
+
+    <!-- Gallery with Carousel -->
+    <section class="section bg-gold" id="gallery">
+        <div class="container">
+            <h2 class="section-title dark">Our Gallery</h2>
+            <p class="center-text">A glimpse into some of the beautiful events we have catered.</p>
+
+            <div class="carousel">
+                <button class="carousel-btn prev">&#10094;</button>
+                <div class="carousel-track">
+                    <img src="front-end/sources/pops_dn1.jpg" class="carousel-image" alt="Event 1">
+                    <img src="front-end/sources/pink_tbls_dn1.jpg" class="carousel-image" alt="Event 2">
+                    <img src="front-end/sources/pops_dn1.jpg" class="carousel-image" alt="Event 3">
+                    <img src="front-end/sources/pink_tbls_dn1.jpg" class="carousel-image" alt="Event 4">
+                </div>
+                <button class="carousel-btn next">&#10095;</button>
+            </div>
+
+            <div class="carousel-dots">
+                <span class="dot active"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews -->
+    <section class="section bg-light" id="reviews">
+        <div class="container">
+            <h2 class="section-title">Customer Reviews</h2>
+            <div class="review-grid">
+                <div class="review-card">
+                    <p>"DN1 Catering made our wedding unforgettable. The food was exceptional and the service flawless!"</p>
+                    <h4>— Sarah & James</h4>
+                </div>
+                <div class="review-card">
+                    <p>"Professional, friendly, and incredibly talented. Our corporate event was a huge success."</p>
+                    <h4>— Mark T.</h4>
+                </div>
+                <div class="review-card">
+                    <p>"Fantastic food and attention to detail. We couldn't have asked for a better catering team."</p>
+                    <h4>— Emily R.</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Based In with Google Map -->
+    <section class="section bg-cream" id="based">
+        <div class="container">
+            <h2 class="section-title">Based in London</h2>
+            <p class="center-text">
+                DN1 Catering proudly serves London and the surrounding counties, bringing exceptional cuisine and service to every event.
+            </p>
+            <div class="map-container">
+                <iframe
+                    src="https://www.google.com/maps?q=London&output=embed"
+                    loading="lazy"
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section (Information Only) -->
+    <section class="section bg-dark" id="contact">
+        <div class="container">
+            <h2 class="section-title">Contact Us</h2>
+            <p class="center-text">Ready to plan your next event? Get in touch with us today.</p>
+            <div class="contact-info">
+                <p><i class="fas fa-envelope"></i> info@dn1catering.com</p>
+                <p><i class="fas fa-phone"></i> +44 7564 602890</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox -->
+    <div id="lightbox">
+        <span class="close">&times;</span>
+        <img id="lightbox-img" src="" alt="Expanded view">
     </div>
 
-    <div class="bg-g" id="gallery">
-        <h1>Our Gallery</h1>
-        <p>Check out some of our recent events and happy clients!</p>
-    </div>
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; <span id="year"></span> DN1 Catering. All rights reserved.</p>
+    </footer>
 
-    <div class="bg-w" id="reviews">
-        <h1>Customer Reviews</h1>
-        <p>Don't just take our word for it - see what our customers have to say about their experience with DN1 Catering!</p>   
-    </div>
+    <script>
+        /* Dynamic Year */
+        document.getElementById("year").textContent = new Date().getFullYear();
 
-    <div class="bg-p" id="based">
-        <h1>Based In...</h1>
-        <p>DN1 Catering is based in the heart of London, but we are proud</p>
-    </div>
+        /* Smooth Scrolling */
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href'))
+                    .scrollIntoView({ behavior: 'smooth' });
+            });
+        });
 
-    <div class="bg-g" id="contact">
-        <h1>Contact Us</h1>
-        <p>Ready to book your next event with DN1 Catering? Contact us today to discuss your catering needs and let us help you create an unforgettable dining experience!</p>
-    </div>
+        /* Carousel Functionality */
+        const track = document.querySelector('.carousel-track');
+        const slides = Array.from(track.children);
+        const nextBtn = document.querySelector('.carousel-btn.next');
+        const prevBtn = document.querySelector('.carousel-btn.prev');
+        const dots = document.querySelectorAll('.dot');
+        let index = 0;
 
-    <div class="bg-b" id="footer">
-        <p>&copy; 2024 DN1 Catering. All rights reserved.</p>
-    </div>
+        function updateCarousel(i) {
+            track.style.transform = `translateX(-${i * 100}%)`;
+            dots.forEach(dot => dot.classList.remove('active'));
+            dots[i].classList.add('active');
+        }
+
+        nextBtn.addEventListener('click', () => {
+            index = (index + 1) % slides.length;
+            updateCarousel(index);
+        });
+
+        prevBtn.addEventListener('click', () => {
+            index = (index - 1 + slides.length) % slides.length;
+            updateCarousel(index);
+        });
+
+        dots.forEach((dot, i) => {
+            dot.addEventListener('click', () => {
+                index = i;
+                updateCarousel(index);
+            });
+        });
+
+        setInterval(() => {
+            index = (index + 1) % slides.length;
+            updateCarousel(index);
+        }, 5000);
+
+        /* Lightbox */
+        const lightbox = document.getElementById('lightbox');
+        const lightboxImg = document.getElementById('lightbox-img');
+
+        document.querySelectorAll('.carousel-image').forEach(img => {
+            img.addEventListener('click', () => {
+                lightbox.style.display = 'flex';
+                lightboxImg.src = img.src;
+            });
+        });
+
+        document.querySelector('#lightbox .close').addEventListener('click', () => {
+            lightbox.style.display = 'none';
+        });
+
+        lightbox.addEventListener('click', (e) => {
+            if (e.target !== lightboxImg) {
+                lightbox.style.display = 'none';
+            }
+        });
+    </script>
 </body>
 </html>
