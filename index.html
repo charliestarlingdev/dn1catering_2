@@ -10,13 +10,11 @@
 </head>
 <body>
 
-    <!-- Contact Bar -->
     <div id="contact-top">
         <p><i class="fas fa-envelope"></i> info@dn1catering.com</p>
         <p><i class="fas fa-phone"></i> +44 7564 602890</p>
     </div>
 
-    <!-- Sticky Navigation -->
     <nav id="navbar">
         <ul>
             <li><a href="#about-us">About</a></li>
@@ -28,7 +26,6 @@
         </ul>
     </nav>
 
-    <!-- Hero Section -->
     <section class="hero">
         <div class="logo-wrapper">
             <img src="front-end/sources/dn1_logo_cropped.png" alt="DN1 Catering Logo" id="logo">
@@ -40,7 +37,6 @@
         </div>
     </section>
 
-    <!-- About Us -->
     <section class="section bg-light" id="about-us">
         <div class="container">
             <h2 class="section-title">About Us</h2>
@@ -53,7 +49,6 @@
         </div>
     </section>
 
-    <!-- Services -->
     <section class="section bg-cream" id="services">
         <div class="container">
             <h2 class="section-title">Our Services</h2>
@@ -64,22 +59,28 @@
                     <img src="front-end/sources/plates_1.jpg" class="service-img" alt="Food">
                     <p>Delicious dishes crafted with the finest ingredients, from canapés to full-course meals.</p>
                 </div>
+
                 <div class="service-card">
                     <i class="fas fa-list"></i>
                     <h3>Custom Menus</h3>
                     <img src="front-end/sources/food_red_dn1.jpg" class="service-img" alt="Menu">
                     <p>Bespoke menus tailored to your tastes, dietary needs, and event theme.</p>
                 </div>
+
                 <div class="service-card">
                     <i class="fas fa-music"></i>
                     <h3>Live Music</h3>
+                    <img src="front-end/sources/table_1.jpeg" class="service-img" alt="Live Music">
                     <p>Enhance your event with talented musicians to create the perfect atmosphere.</p>
                 </div>
+
                 <div class="service-card">
                     <i class="fas fa-glass-cheers"></i>
                     <h3>Entertainment</h3>
+                    <img src="front-end/sources/tbl_red_balloons.jpg" class="service-img" alt="Entertainment">
                     <p>From DJs to magicians, we provide entertainment options to delight your guests.</p>
                 </div>
+
                 <div class="service-card">
                     <i class="fas fa-star"></i>
                     <h3>Complete Event Planning</h3>
@@ -90,14 +91,13 @@
         </div>
     </section>
 
-    <!-- Gallery with Carousel -->
     <section class="section bg-gold" id="gallery">
         <div class="container">
-            <h2 class="section-title dark">Our Gallery</h2>
+            <h2 class="section-title">Our Gallery</h2>
             <p class="center-text">A glimpse into some of the beautiful events we have catered.</p>
 
             <div class="carousel">
-                <button class="carousel-btn prev">&#10094;</button>
+                <button class="carousel-btn prev" aria-label="Previous image">&#10094;</button>
                 <div class="carousel-track">
                     <img src="front-end/sources/pops_dn1.jpg" class="carousel-image" alt="Event 1">
                     <img src="front-end/sources/pink_tbls_dn1.jpg" class="carousel-image" alt="Event 2">
@@ -108,7 +108,7 @@
                     <img src="front-end/sources/tbl_lemon.jpg" class="carousel-image" alt="Event 7">
                     <img src="front-end/sources/tbl_multi.jpg" class="carousel-image" alt="Event 8">
                 </div>
-                <button class="carousel-btn next">&#10095;</button>
+                <button class="carousel-btn next" aria-label="Next image">&#10095;</button>
             </div>
 
             <div class="carousel-dots">
@@ -124,7 +124,6 @@
         </div>
     </section>
 
-    <!-- Reviews -->
     <section class="section bg-light" id="reviews">
         <div class="container">
             <h2 class="section-title">Customer Reviews</h2>
@@ -145,7 +144,6 @@
         </div>
     </section>
 
-    <!-- Based In with Google Map -->
     <section class="section bg-cream" id="based">
         <div class="container">
             <h2 class="section-title">Based in Doncaster</h2>
@@ -154,7 +152,7 @@
             </p>
             <div class="map-container">
                 <iframe
-                     src="https://www.google.com/maps?q=Wheatley+Golf+Club&output=embed"
+                    src="https://www.google.com/maps?q=Wheatley+Golf+Club&output=embed"
                     loading="lazy"
                     allowfullscreen>
                 </iframe>
@@ -162,7 +160,6 @@
         </div>
     </section>
 
-    <!-- Contact Section (Information Only) -->
     <section class="section bg-dark" id="contact">
         <div class="container">
             <h2 class="section-title">Contact Us</h2>
@@ -174,31 +171,27 @@
         </div>
     </section>
 
-    <!-- Lightbox -->
     <div id="lightbox">
         <span class="close">&times;</span>
         <img id="lightbox-img" src="" alt="Expanded view">
     </div>
 
-    <!-- Footer -->
     <footer class="footer">
         <p>&copy; <span id="year"></span> DN1 Catering. All rights reserved.</p>
     </footer>
 
     <script>
-        /* Dynamic Year */
         document.getElementById("year").textContent = new Date().getFullYear();
 
-        /* Smooth Scrolling */
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function(e) {
                 e.preventDefault();
-                document.querySelector(this.getAttribute('href'))
-                    .scrollIntoView({ behavior: 'smooth' });
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
             });
         });
 
-        /* Carousel Functionality */
         const track = document.querySelector('.carousel-track');
         const slides = Array.from(track.children);
         const nextBtn = document.querySelector('.carousel-btn.next');
@@ -209,7 +202,7 @@
         function updateCarousel(i) {
             track.style.transform = `translateX(-${i * 100}%)`;
             dots.forEach(dot => dot.classList.remove('active'));
-            dots[i].classList.add('active');
+            if (dots[i]) dots[i].classList.add('active');
         }
 
         nextBtn.addEventListener('click', () => {
@@ -234,7 +227,6 @@
             updateCarousel(index);
         }, 5000);
 
-        /* Lightbox */
         const lightbox = document.getElementById('lightbox');
         const lightboxImg = document.getElementById('lightbox-img');
 
